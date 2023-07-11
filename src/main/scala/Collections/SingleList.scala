@@ -1,4 +1,4 @@
-package LinkedLists
+package Collections
 
 sealed trait SingleList[+A]
 case object Nil extends SingleList[Nothing]

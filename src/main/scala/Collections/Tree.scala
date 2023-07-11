@@ -1,4 +1,4 @@
-package Tree
+package Collections
 
 import scala.annotation.tailrec
 
@@ -23,8 +23,8 @@ object Tree extends App {
         // following the below pattern where you're concatenating on a list, the below seems right but isn't, maybe this is something we can break dow further?
         case Branch(left, right) => asListRec(Branch(right), accumulator + Branch(left))
       }
+      asListRec(tree, 0)
     }
-    asListRec(tree, 0)
   }
 
   /*

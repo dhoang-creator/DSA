@@ -1,4 +1,4 @@
-package LinkedLists
+package Collections
 
 sealed trait DoubleList[+A]
 case object Nil extends DoubleList[Nothing]

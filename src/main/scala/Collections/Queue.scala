@@ -1,4 +1,4 @@
-package Queue
+package Collections
 
 sealed trait Queue[+A]
 case class Node[A](value: A) extends Queue[A]
